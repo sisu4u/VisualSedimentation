@@ -1,7 +1,7 @@
 Bower VisualSedimentation
 ===================
 
-This is a fork of https://github.com/INRIA/VisualSedimentation/network/members and repackaged for bower.
+This is a fork of https://github.com/INRIA/VisualSedimentation and repackaged for bower.
 Jquery, d3, and box2dweb are listed as bower dependencies of this package and not included into the concatinated or minified files. I did not made any further changes to the code.
 
 Install with:
