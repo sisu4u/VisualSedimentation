@@ -22,11 +22,29 @@ module.exports = function (grunt) {
 				src: 'dist/<%= pkg.name %>.js',
 				dest: 'dist/<%= pkg.name %>.min.js'
 			}
+		},
+		wiredep: {
+
+			task: {
+
+				// Point to the files that should be updated when
+				// you run `grunt wiredep`
+				src: [
+      				'examples/**/*.html'
+    			],
+				options: {
+					// See wiredep's configuration documentation for the options
+					// you may pass:
+
+					// https://github.com/taptapship/wiredep#configuration
+				}
+			}
 		}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-wiredep');
 
 	grunt.registerTask('default', ['concat', 'uglify']);
 
