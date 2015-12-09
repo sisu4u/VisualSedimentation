@@ -1,0 +1,11 @@
+{
+  "name": "visual-sedimentation",
+  "version": "0.0.1",
+  "main": "./dist/visual-sedimentation.js",
+  "ignore": [],
+  "dependencies": {
+    "jquery": ">=1.4.2",
+    "d3": ">=2.5",
+    "box2dweb": "*"
+  }
+}
